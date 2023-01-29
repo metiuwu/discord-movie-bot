@@ -3,7 +3,7 @@ module.exports = {
     name: "ready",
     async execute() {
  
-        console.log(`(*) Bot ${client.user.tag} ismiyle başlatıldı.`)
+        console.log(`(*) Bot ${client.user.tag}.`)
 
     }
 }
