@@ -32,7 +32,7 @@ module.exports = {
     console.log(moviename);
 
     axios
-    .get(`http://www.omdbapi.com/?t=${moviename}&apikey=58e6ec5d`)
+    .get(`http://www.omdbapi.com/?t=${moviename}&apikey=WRITE YOUR APİ KEYYY!!!!`) // APİ KEYİNİ YAZ!
     .then(async (response) => {
         if (response.data.Response === "True") {
             if(response.data.Poster !== "N/A") {
