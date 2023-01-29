@@ -1,3 +1,6 @@
+Metiuw#0001 (Discord)
+
+
 discord tarafından onaylı olan botumun alt yapısı işte. 
 
 Mongo DB'li favori listenize istediginiz filmi ekliyip çıkartabiliyorsunuz. 
