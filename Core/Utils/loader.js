@@ -22,6 +22,6 @@ client.on('ready', async () => {
 
     let data = await rest.put(Routes.applicationCommands(client.user.id), { body: isCommands })
 
-    console.log(`(*) ${data.length} adet komut yüklendi.`)
+    console.log(`(*) ${data.length} Loading command.`)
 
 })
