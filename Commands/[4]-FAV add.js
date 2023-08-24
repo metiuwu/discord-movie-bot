@@ -32,10 +32,11 @@ module.exports = {
   async execute(interaction, client) {
     let moviename = interaction.options.getString("name");
     console.log(moviename);
+    const apiKey = "api key"
     switch (interaction.options._subcommand) {
       case "add":
         axios
-          .get(`http://www.omdbapi.com/?t=${moviename}&apikey=WRITE YOUR APİ KEYYY!!!!`) // APİ KEYİNİ YAZ!
+          .get(`http://www.omdbapi.com/?t=${moviename}&apikey=${apiKey}`) // APİ KEYİNİ YAZ!
           .then(async (response) => {
             if (response.data.Response === "True") {
               const movie = await moviedbs.findOne({
@@ -140,7 +141,7 @@ module.exports = {
       case "delete":
         let moviename2 = interaction.options.getString("movie_name");
         axios
-          .get(`http://www.omdbapi.com/?t=${moviename2}&apikey=58e6ec5d`)
+          .get(`http://www.omdbapi.com/?t=${moviename2}&apikey=${apiKey}`)
           .then(async (response) => {
             if (response.data.Response === "True") {
               const movies = response.data.Title;
